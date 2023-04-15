@@ -76,7 +76,7 @@ fun convertLongToDateString(systemTime: Long): String {
  *           See: https://developer.android.com/reference/android/text/Spanned
  */
 fun formatNights(nights: List<SleepNight>, resources: Resources): Spanned {
-    Log.d("NKK 3", "list size "+ nights.size)
+    Log.d("NKK", "list size "+ nights.size)
     val sb = StringBuilder()
     sb.apply {
         append(resources.getString(R.string.title))

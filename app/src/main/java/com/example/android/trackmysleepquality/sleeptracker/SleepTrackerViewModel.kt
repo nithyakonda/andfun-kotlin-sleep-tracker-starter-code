@@ -80,9 +80,9 @@ class SleepTrackerViewModel(
         fun onStopTracking() {
                 viewModelScope.launch {
                         val oldNight = tonight.value ?: return@launch
-                        Log.d("NKK 1", oldNight.toString())
+                        Log.d("NKK", oldNight.toString())
                         oldNight.endTimeMilli = System.currentTimeMillis()
-                        Log.d("NKK 2", oldNight.toString())
+                        Log.d("NKK", oldNight.toString())
                         update(oldNight)
                 }
         }
